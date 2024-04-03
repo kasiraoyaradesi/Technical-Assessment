@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Captcha</title>
+  <script>
+    function generateCaptcha() {
+        let image=document.getElementById("captcha").Math.random();
+    //   var captcha = Math.random().toString(36).substr(2, 6); // Generate a random alphanumeric string
+     random.innerHTML = image; // Display the captcha in the HTML
+    
+    }
+  </script>
+
+  <style>
+    div{
+        justify-content: space-around;
+        display: flex;
+    }
+  </style>
+</head>
+<body>
+  
+<div id="random"></div>
+
+  <div id="captcha">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQhLhj5LJhb3SS62KrbY73HBuc1EomaOqxXw&usqp=CAU"  width="170px" ,height="50px"> 
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTznSZ6XhASx7u_rCAXhsEL-QsWS9ef8uf-xQ&usqp=CAU"  width="170px" ,height="50px"> 
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzfe-nzNfrAK9UED4iHmTfuBbzddrzAaWhDw&usqp=CAU"  width="170px" ,height="50px"> 
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtnvAOajH9gS4C30cRF7rD_voaTAKly2Ntaw&usqp=CAU" width="170px" ,height="50px"> 
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-eIHhwNcb2J4-Kyy05L_vU0ZDR3mw32qGUsbktbPVfqYcL7DbhMu4hRNUrW1Z9SG2APE&usqp=CAU"  width="170px" ,height="50px"> 
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRin-RHdvU8GYNk8I2YPre0yYYHCJlY9GuAbsYmBF-AOTXZQXEOrOjF-etRUFagA9Gx0NE&usqp=CAU"  width="170px" ,height="50px">
+   
+</div>
+<button onclick="generateCaptcha()">refresh</button>
+
+  <script>
+    generateCaptcha(); // Generate initial captcha when the page loads
+  </script>
+</body>
+</html>
