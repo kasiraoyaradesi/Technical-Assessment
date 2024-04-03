@@ -1,40 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Simple Captcha</title>
-  <script>
-    function generateCaptcha() {
-        let image=document.getElementById("captcha").Math.random();
-    //   var captcha = Math.random().toString(36).substr(2, 6); // Generate a random alphanumeric string
-     random.innerHTML = image; // Display the captcha in the HTML
-    
-    }
-  </script>
-
-  <style>
-    div{
-        justify-content: space-around;
-        display: flex;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Identical Tiles Verification</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
-<div id="random"></div>
+  <h3 id="p">Please click on the identical tiles to verify that you are not a robot.</h3>
+  <div class="images" id="images">
+    <img class="img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQhLhj5LJhb3SS62KrbY73HBuc1EomaOqxXw&usqp=CAU" alt="Image 1">
+    <img class="img2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTznSZ6XhASx7u_rCAXhsEL-QsWS9ef8uf-xQ&usqp=CAU" alt="Image 2">
+    <img class="img3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzfe-nzNfrAK9UED4iHmTfuBbzddrzAaWhDw&usqp=CAU" alt="Image 3">
+    <img class="img4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtnvAOajH9gS4C30cRF7rD_voaTAKly2Ntaw&usqp=CAU" alt="Image 4">
+    <img class="img5" src="https://img.lovepik.com/photo/48013/0627.jpg_wh860.jpg" alt="Image 5">
+  </div>
+  <button id="reset" style="display: none;">Reset</button>
+  <button id="verify" style="display: none;">Verify</button>
+  <p id="para" style="display: none;"></p>
 
-  <div id="captcha">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQhLhj5LJhb3SS62KrbY73HBuc1EomaOqxXw&usqp=CAU"  width="170px" ,height="50px"> 
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTznSZ6XhASx7u_rCAXhsEL-QsWS9ef8uf-xQ&usqp=CAU"  width="170px" ,height="50px"> 
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzfe-nzNfrAK9UED4iHmTfuBbzddrzAaWhDw&usqp=CAU"  width="170px" ,height="50px"> 
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtnvAOajH9gS4C30cRF7rD_voaTAKly2Ntaw&usqp=CAU" width="170px" ,height="50px"> 
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-eIHhwNcb2J4-Kyy05L_vU0ZDR3mw32qGUsbktbPVfqYcL7DbhMu4hRNUrW1Z9SG2APE&usqp=CAU"  width="170px" ,height="50px"> 
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRin-RHdvU8GYNk8I2YPre0yYYHCJlY9GuAbsYmBF-AOTXZQXEOrOjF-etRUFagA9Gx0NE&usqp=CAU"  width="170px" ,height="50px">
-   
-</div>
-<button onclick="generateCaptcha()">refresh</button>
-
-  <script>
-    generateCaptcha(); // Generate initial captcha when the page loads
-  </script>
+<script src="./script.js"></script>
 </body>
 </html>
